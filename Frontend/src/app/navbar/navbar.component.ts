@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ThemePalette} from '@angular/material/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
 })
 
 export class NavbarComponent {
-
+  color: ThemePalette = 'accent';
+  checked = false;
+  disabled = false;
 }
