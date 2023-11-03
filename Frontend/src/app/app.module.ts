@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,14 +14,26 @@ import { MusicCardComponent } from './music-card/music-card.component';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { AddMusicFormComponent } from './add-music-form/add-music-form.component';
+import { DialogModule } from 'primeng/dialog';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { AddMusicCoverPicComponent } from './add-music-cover-pic/add-music-cover-pic.component';
+import { ToastModule } from 'primeng/toast';
+import { FileUploadModule } from 'primeng/fileupload';
+import { AddMusicFileComponent } from './add-music-file/add-music-file.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    MusicCardComponent
+    MusicCardComponent,
+    AddMusicFormComponent,
+    AddMusicCoverPicComponent,
+    AddMusicFileComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -30,7 +43,12 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatTooltipModule,
     CardModule,
     ButtonModule,
-    MatGridListModule
+    MatGridListModule,
+    DialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ToastModule,
+    FileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]

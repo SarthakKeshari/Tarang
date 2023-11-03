@@ -2,29 +2,18 @@
     flex: 1 1 auto;
 }
 
-mat-toolbar{
-    background-color: black; 
-}
-
-.title{
+.toolbar{
     display: flex;
     align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+mat-toolbar{
+    background-color: black; 
 }
 
 .title-logo{
     padding-top: 5px;
     height: 50px;
-}
-
-.add-music-button{
-    padding: 6px;
-    border-radius: 100%;
-    border: 1px solid rgba(220, 220, 220, 0.50);
-    background-color: #00000050;
-    cursor: pointer;
-}
-
-.add-music-button:hover{
-    box-shadow: 1px 1px 15px #FF408150;
-    border: 1px solid rgba(220, 220, 220);
 }
