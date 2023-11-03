@@ -9,11 +9,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { MusicCardComponent } from './music-card/music-card.component';
+import { CardModule } from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    MusicCardComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +27,10 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatToolbarModule, 
     MatButtonModule, 
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    CardModule,
+    ButtonModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
