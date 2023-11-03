@@ -8,7 +8,6 @@ mat-grid-tile {
     height: fit-content;
     padding-left: 10px;
     padding-right: 10px;
-    /* padding-right: 20px; */
 }
 
 .card-container{
@@ -40,19 +39,6 @@ mat-grid-tile {
 .card-scroller{
     right: 1.5vw;
     position: relative;
-}
-
-.card-scroller-button{
-    padding: 15px;
-    border-radius: 100%;
-    border: 1px solid rgba(220, 220, 220, 0.50);
-    background-color: #00000050;
-    cursor: pointer;
-}
-
-.card-scroller-button:hover{
-    box-shadow: 1px 1px 15px #FF408150;
-    border: 1px solid rgba(220, 220, 220);
 }
 
 .pi-angle-right{
