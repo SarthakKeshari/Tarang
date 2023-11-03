@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-music-form.component.css']
 })
 export class AddMusicFormComponent {
-    visible: boolean = true;
+    visible: boolean = false;
 
     showDialog() {
         this.visible = true;
