@@ -22,6 +22,8 @@ import { AddMusicCoverPicComponent } from './add-music-cover-pic/add-music-cover
 import { ToastModule } from 'primeng/toast';
 import { FileUploadModule } from 'primeng/fileupload';
 import { AddMusicFileComponent } from './add-music-file/add-music-file.component';
+import { ProfileComponent } from './profile/profile.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { AddMusicFileComponent } from './add-music-file/add-music-file.component
     MusicCardComponent,
     AddMusicFormComponent,
     AddMusicCoverPicComponent,
-    AddMusicFileComponent
+    AddMusicFileComponent,
+    ProfileComponent,
+    HomeComponent
   ],
   imports: [
     FormsModule,
