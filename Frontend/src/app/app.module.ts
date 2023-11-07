@@ -27,6 +27,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeFooterComponent } from './home-footer/home-footer.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
     MatFormFieldModule,
     MatInputModule,
     ToastModule,
-    FileUploadModule
+    FileUploadModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
