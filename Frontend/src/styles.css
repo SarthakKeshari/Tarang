@@ -13,5 +13,5 @@ body {
 body {
     margin: 0;
     font-family: sans-serif;
-    background: linear-gradient(138deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.05) 100%);
+    background: linear-gradient(138deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.01) 100%);
 }

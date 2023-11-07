@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+// import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -24,6 +24,9 @@ import { FileUploadModule } from 'primeng/fileupload';
 import { AddMusicFileComponent } from './add-music-file/add-music-file.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
+import { HomeHeaderComponent } from './home-header/home-header.component';
+import { HomeFooterComponent } from './home-footer/home-footer.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +37,14 @@ import { HomeComponent } from './home/home.component';
     AddMusicCoverPicComponent,
     AddMusicFileComponent,
     ProfileComponent,
-    HomeComponent
+    HomeComponent,
+    HomeHeaderComponent,
+    HomeFooterComponent,
+    SideMenuComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule, 
     MatButtonModule, 

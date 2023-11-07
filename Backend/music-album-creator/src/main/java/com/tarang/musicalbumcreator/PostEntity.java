@@ -11,4 +11,12 @@ public class PostEntity {
 		// TODO Auto-generated method stub
 		return this.msg;
 	}
+	public void setName(String name) {
+		// TODO Auto-generated method stub
+		this.name = name;
+	}
+	public void setMsg(String msg) {
+		// TODO Auto-generated method stub
+		this.msg = msg;
+	}
 }

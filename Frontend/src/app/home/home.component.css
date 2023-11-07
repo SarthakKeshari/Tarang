@@ -1,27 +1,26 @@
-mat-grid-tile {
-    background: lightblue;
-}
 .body-area {
     display: flex;
-    justify-content: space-around; 
+    flex-direction: column;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    margin: 4px;
 }
+
+.album-display-area{
+    padding-top: 10px;
+    background-color: #121212;
+    border-radius: 0px 0px 10px 10px;
+    height: 85vh;
+}
+
 .side-nav {
     padding: 10px;
 }
+
 .content-area {
     padding: 10px; 
 }
-.profile-button {
-    margin-top: 60%;
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid black;
-    border-radius: 30px;
-    background-color: whitesmoke;
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
-}
+
 .card-row{
     display: flex;
     flex-direction: column;
@@ -29,6 +28,7 @@ mat-grid-tile {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .card-container{
     display: block;
 }
@@ -46,7 +46,7 @@ mat-grid-tile {
 
 .show-all-link{
     font-weight: bolder;
-    font-size: small;
+    font-size: 11px;
     text-decoration: none;
     color: #ffffff99;
 }
