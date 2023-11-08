@@ -31,13 +31,14 @@ public class UploadMusicController {
 
 	@PostMapping("/addmusic")
     public ResponseEntity<Object> addMusic(@RequestBody UploadMusicEntity uploadMusicEntity) {
-        System.out.println(uploadMusicEntity.getTitle() + " - " + uploadMusicEntity.getDescription());
+        System.out.println(uploadMusicEntity.getTitle() + " - " + uploadMusicEntity.getDescription() + " - " + uploadMusicEntity.getSong());
 
- 
+        SongList songList = new SongList();
+        songList.addSong(uploadMusicEntity.getTitle(), uploadMusicEntity.getDescription(), uploadMusicEntity.getSong());
+        
         Map<String, String> response = new HashMap<>();
-        response.put("status", "SUCCESS");
+        response.put("status", HttpStatus.OK.name());
         response.put("message", "Music Uploaded Successfully");
-
         
         return new ResponseEntity<>(response, HttpStatus.OK);
 	}

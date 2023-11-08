@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MusicAlbumCreatorApplication {
 
 	public static void main(String[] args) {
+		SongList songList = new SongList();
+		songList.initialAddSong();
 		SpringApplication.run(MusicAlbumCreatorApplication.class, args);
 	}
 
