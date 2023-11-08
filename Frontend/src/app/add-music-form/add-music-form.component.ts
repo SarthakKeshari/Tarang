@@ -7,31 +7,39 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./add-music-form.component.css']
 })
 export class AddMusicFormComponent {
-    visible: boolean = false;
+  visible: boolean = false;
 
-    showDialog() {
-        this.visible = true;
-    }
-    /*music: AddMusicFormComponent = {
-      songTitle: '',
-      songDescription: '',
-    };
-  
-    constructor(private http: HttpClient) {}
-  
-    submitForm() {
-      this.http.post('http://localhost:8080/api/music/add', this.music).subscribe(
-        (response) => {
-          console.log('Music added successfully', response);
-        },
-        (error) => {
-          console.error('Error adding music', error);
+  showDialog() {
+    this.visible = true;
+  }
+
+  music: { title: string, description: string } = { title: '', description: '' };
+
+  constructor(private http: HttpClient) { }
+
+  submitForm() {
+    const url = 'http://localhost:8080/addmusic';
+    this.http.post(url, this.music).subscribe(
+      (response) => {
+
+        try {
+          const responseData = JSON.parse(JSON.stringify(response));
+          console.log(responseData);
+          console.log('Response:', response);
+
+          this.resetForm();
+          this.visible = false;
+        } catch (error) {
+          console.error('Error parsing JSON:', error);
         }
-      );
-    }*/
-    value: string | undefined;
+      },
+      (error) => {
+        console.error('Error:', error);
+      }
+    );
+  }
 
-
+  resetForm() {
+    this.music = { title: '', description: '' };
+  }
 }
-
-
