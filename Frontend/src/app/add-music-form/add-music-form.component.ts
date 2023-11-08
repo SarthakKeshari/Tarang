@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -9,11 +9,13 @@ import { HttpClient } from '@angular/common/http';
 export class AddMusicFormComponent {
   visible: boolean = false;
 
+  @Input() uploadedFiles: any[] = []
+
   showDialog() {
     this.visible = true;
   }
 
-  music: { title: string, description: string } = { title: '', description: '' };
+  music: { title: string, description: string, song: any } = { title: '', description: '', song: undefined };
 
   constructor(private http: HttpClient) { }
 
@@ -21,7 +23,6 @@ export class AddMusicFormComponent {
     const url = 'http://localhost:8080/addmusic';
     this.http.post(url, this.music).subscribe(
       (response) => {
-
         try {
           const responseData = JSON.parse(JSON.stringify(response));
           console.log(responseData);
@@ -40,6 +41,6 @@ export class AddMusicFormComponent {
   }
 
   resetForm() {
-    this.music = { title: '', description: '' };
+    this.music = { title: '', description: '', song: undefined };
   }
 }

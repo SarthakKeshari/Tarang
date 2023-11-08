@@ -9,14 +9,4 @@ import { SongDetail } from '../song-detail';
 })
 export class MusicCardComponent {
   @Input() musicdetail: SongDetail | undefined;
-
-  constructor(private http: HttpClient) {
-  }
-
-  testget() {
-    this.http.get("http://127.0.0.1:8080/get").subscribe(
-      (response) => {                           
-        console.log(response)
-      })
-  }
 }
