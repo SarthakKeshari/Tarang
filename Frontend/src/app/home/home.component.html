@@ -4,16 +4,14 @@
     <div class="album-display-area">
         <div class="card-row">
             <div class="title-bar">
-                <p class="row-title">Tarang Playlists</p>
+                <p class="row-title">Tarang Playlists &nbsp;<i class="pi pi-refresh" matTooltip="Refresh" (click)="refresh()" style="cursor: pointer;"></i></p>
                 <a href="#" class="show-all-link">Show all</a>
             </div>
             <div class="card-container">
-                <app-music-card></app-music-card>
-                <app-music-card></app-music-card>
-                <app-music-card></app-music-card>
-                <app-music-card></app-music-card>
-                <app-music-card></app-music-card>
-                <app-music-card></app-music-card>
+                <span *ngFor="let music of results">
+                    <app-music-card [musicdetail]="music"></app-music-card>
+                    <!-- <p>{{location.city}}, {{location.state}}</p> -->
+                </span>
             </div>
             <!-- <div class="card-scroller">
                 <button class="card-scroller-button"><i class="pi pi-angle-right"></i></button>

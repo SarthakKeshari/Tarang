@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
+import { Component, Input } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { SongDetail } from '../song-detail';
 
 @Component({
   selector: 'app-music-card',
@@ -7,6 +8,8 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./music-card.component.css']
 })
 export class MusicCardComponent {
+  @Input() musicdetail: SongDetail | undefined;
+
   constructor(private http: HttpClient) {
   }
 

@@ -20,7 +20,7 @@ public class GetMusicController {
     public ResponseEntity<Object> addMusic() {
 		
 		SongList songList = new SongList();
-		Map<String, List<Map<Integer, List<String>>>> response = new HashMap<>();
+		Map<String, List<Map<Integer, Map<String, String>>>> response = new HashMap<>();
         response.put("music", songList.getSongs());
 
         return new ResponseEntity<>(response, HttpStatus.OK);
