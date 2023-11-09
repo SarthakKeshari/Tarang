@@ -9,4 +9,10 @@ import { SongDetail } from '../song-detail';
 })
 export class MusicCardComponent {
   @Input() musicdetail: SongDetail | undefined;
+
+  visible: boolean = false;
+
+    showDialog() {
+        this.visible = true;
+    }
 }

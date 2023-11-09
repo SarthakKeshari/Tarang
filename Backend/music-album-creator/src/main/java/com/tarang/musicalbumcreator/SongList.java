@@ -15,7 +15,7 @@ public class SongList {
 		Map<String, String> songDetail1 = new HashMap<>();
 		songDetail1.put("title", "Tum Hi Ho");
 		songDetail1.put("description", "It makes me feel romantic.");
-		songDetail1.put("song", "TumHiHo.mp3");
+		songDetail1.put("song", "../../assets/music/TumHiHo.mp3");
 		
 		songMap1.put(1, songDetail1);
 		
@@ -25,7 +25,7 @@ public class SongList {
 		Map<String, String> songDetail2 = new HashMap<>();
 		songDetail2.put("title", "Khuda Bhi");
 		songDetail2.put("description", "It makes me feel happy.");
-		songDetail2.put("song", "KhudaBhi.mp3");
+		songDetail2.put("song", "../../assets/music/KhudaBhi.mp3");
 		
 		songMap2.put(2, songDetail2);
 		
