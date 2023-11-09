@@ -9,5 +9,9 @@
         <div class="description">
             {{musicdetail?.description}}
         </div>
+        <p>{{musicdetail?.song}}</p>
+        <audio controls>
+            <source [src]="musicdetail?.song" type="audio/mp3">
+        </audio>
     </div>
 </div>

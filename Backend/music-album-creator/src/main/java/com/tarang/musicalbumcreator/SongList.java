@@ -37,7 +37,7 @@ public class SongList {
 		Map<String, String> songDetailAdd = new HashMap<>();
 		songDetailAdd.put("title", title);
 		songDetailAdd.put("description", description);
-		songDetailAdd.put("song", song);
+		songDetailAdd.put("song", "../../assets/music/" + title.replace(" ","") + ".mp3");
 		
 		songMapAdd.put(songList.size()+1, songDetailAdd);
 		
